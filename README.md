@@ -32,3 +32,8 @@ Spike merah pada grafik menunjukkan laju pesan yang dikirim oleh RabbitMQ ke sub
 c. Consumer ack (Rate at which messages are being acknowledged by consumers.)
 ![Consumer ack](/image/image%20copy%202.png)
 Spike ungu menunjukkan laju pengakuan (acknowledgment) pesan oleh subscriber. Artinya, subscriber berhasil menerima dan memproses pesan tersebut lalu mengirimkan sinyal acknowledgement ke RabbitMQ. Spike yang muncul bersamaan/beriringan dengan spike pada Deliver [manual ack] menunjukkan consumer memproses pesan secara real-time, tanpa ada penundaan.
+
+
+4. Simulation slow subscriber
+![Simulation slow ssubscriber](/image/image%20copy%203.png)
+Pada gambar di atas, total queued message nya naik sampai mencapai 45 message, lalu perlahan turun ke nol. Ini menunjukkan bahwa publisher mengirim banyak pesan sekaligus dalam waktu singkat, sedangkan subscriber memproses pesan-pesan tersebut satu per satu karena delay yang ditambahkan pada program subsccriber.
