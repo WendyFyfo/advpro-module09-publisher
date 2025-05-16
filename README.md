@@ -11,4 +11,8 @@ b. The url of: “amqp://guest:guest@localhost:5672” is the same as in the sub
 = URL `amqp://guest:guest@localhost:5672` yang digunakan dalam program publisher sama dengan yang ada dalam program subscriber menunjukkan keduanya terhubung ke instance RabbitMQ yang sama.
 
 ### Preparing Message Broker (RabbitMQ)
+1. Running RabbitMQ
 ![Running and opening RabbitMQ](/image/run-rabbitmq.png)
+
+2. Sending and Processing Event
+![Sending and Processing Event](/image/sending-proccesing-event.png)
